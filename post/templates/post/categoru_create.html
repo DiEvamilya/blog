@@ -1,0 +1,14 @@
+{% extends 'post/base.html' %}
+
+{% block content %}
+
+<p>Создать категорию: </p>
+
+       <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Создать" >
+
+    </form>
+
+{% endblock %}

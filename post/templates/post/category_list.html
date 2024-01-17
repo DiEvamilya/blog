@@ -1,0 +1,12 @@
+{% extends 'post/base.html' %}
+
+
+{% block content %}
+
+<p>
+{% for category in categories %}
+    {{ category.name }} <br>
+{% endfor %}
+</p>
+
+{% endblock %}
